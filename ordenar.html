@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta name="description" content="Web para ordenar un pedido de pastelería">    
+    <meta name="author" content="Aarón Quintanar">  
+    <title >Realizar pedido 🎂</title>
+    <link rel="shortcut icon" href= "D:\Curso Launch X\Front end\2. HTML\RoyaleBakery logo.png">
+    <Style>
+        * {
+            box-sizing: border-box;
+        }
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        header {
+            background-color: #F4900C;
+            padding: 10px;
+            text-align: center;
+            font-size: 35px;
+        }
+        main {
+            background-color: #FFDE59;
+            padding: 10px;
+            text-align: center;
+            font-size: 35px;
+        }
+        /* Estilo de footer */
+        footer {
+            background-color: #BE1931;
+            padding: 10px;
+            text-align: center;
+            color: white;
+        }
+        @media (max-width: 600px) {
+        nav,
+            article {
+                width: 100%;
+                height: auto;
+            }
+        }
+    </Style>
+</head>
+<body>
+    <header>
+        <nav>
+            <img src="D:\Curso Launch X\Front end\2. HTML\RoyaleBakery logo.png" alt="Logo RoyaleBakery" width="150px" height="150px">
+            <a href="D:/Curso Launch X/Front end/2. HTML/index.html">Home</a> 
+            <a href="D:\Curso Launch X\Front end\2. HTML\ordenar.html">Realizar orden</a> 
+            <a href="D:\Curso Launch X\Front end\2. HTML\inventario.html">Inventario</a> 
+            <a href="D:\Curso Launch X\Front end\2. HTML\pedidos.html">Pedidos</a>
+        </nav>
+    </header>
+
+    <main>
+        <Section>
+            <h1>Ordena tus pasteles aquí</h1>
+            <hr>
+            <h2>Datos personales</h2>
+            <label for="nombre">Nombre</label><br>
+            <input type="name" id="nombre" name="nombre"><br><br>
+            
+            <label for="Apellido paterno">Apellido Paterno</label><br>
+            <input type="LastName" id="Apellido paterno" name="Apellido paterno"><br><br>
+            
+            <label for="tel1">Teléfono</label><br>
+            <input type="telefono" id="tel1" name="tel1" maxlength="10"><br><br>
+            
+            <label for="correo1">Correo</label><br>
+            <input type="email" id="correo1" name="correo1" maxlength="30"><br><br>
+            <hr>
+
+            <h2>Selecciona los sabores</h2><br>
+            <input type="checkbox" id="topping1" name="topping1" value="Chocolate">
+            <label for="topping1">Pastel de chocolate</label><br>
+            <input type="checkbox" id="topping2" name="topping2" value="Vainilla">
+            <label for="topping2">Pastel de Vainilla</label><br>
+            <input type="checkbox" id="topping3" name="topping3" value="Fresa">
+            <label for="topping3">Pastel de Fresa</label><br>
+            <input type="checkbox" id="topping4" name="topping4" value="Imposible">
+            <label for="topping4">Pastel imposible</label><br><br>
+
+            <h2>Selecciona los adornos</h2><br>
+            <input type="checkbox" id="topping1" name="topping1" value="M-nems">
+            <label for="topping1">M-nems</label><br>
+            <input type="checkbox" id="topping2" name="topping2" value="Chispas de chocolate">
+            <label for="topping2">Chispas de chocolate</label><br>
+            <input type="checkbox" id="topping3" name="topping3" value="Velitas">
+            <label for="topping3">Velitas</label><br><br>
+            
+            <h2>Coloca una descripción general del Pastel</h2>
+            <form action="/accion.js" id="form1" method="post">
+            <label for="descripcion">Descripción del pastel:</label>
+            <input type="text" id="descripcion" name="descripcion"><br><br>
+            <input type="submit" value="Ordenar">
+            <input type="reset">
+            </form>
+        </Section>
+
+    </main>
+
+    <footer>
+        <p>Author: Aarón Quintanar</p>
+        <p>Teléfono: <br> +52 (55) 7524 8510</p>
+        <p>Horarios de atención: <br> Lunes - Viernes 8:00 a 18:00 <br> Sábados y Domingos 10:00 a 16:00</p>
+        <p>Mail:<a href="mailto:hege@example.com">hege@example.com</a></p>
+        <p>Ubicación: <br> Cedros 345, Col. Antigua C.P. 04550, Ciudad de México</p>
+    </footer> 
+  
+</body>
+</html>
